@@ -1,9 +1,8 @@
-# bot.py
 import os
 import asyncio
 import logging
 from aiogram import Bot, Dispatcher
-from aiogram.fsm.storage.memory import MemoryStorage   # <- добавлено
+from aiogram.fsm.storage.memory import MemoryStorage
 
 from app.db import init_db
 from app import handlers

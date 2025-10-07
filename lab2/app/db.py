@@ -1,5 +1,3 @@
-# app/db.py
-
 import sqlite3
 import asyncio
 from typing import Optional, List, Tuple

@@ -1,5 +1,3 @@
-# app/handlers.py
-
 import aiohttp
 from aiogram import Bot, Dispatcher
 from aiogram.filters import Command
