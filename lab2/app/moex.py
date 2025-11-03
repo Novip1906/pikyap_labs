@@ -6,10 +6,6 @@ import logging
 logger = logging.getLogger(__name__)
 
 async def fetch_price_from_moex(symbol: str, session: aiohttp.ClientSession) -> Optional[float]:
-    """
-    Пытаемся получить последнюю цену тикера symbol с MOEX ISS.
-    Возвращает float (price) или None, если не удалось.
-    """
     endpoints = [
         f"{ISS_BASE}/engines/stock/markets/shares/boards/TQBR/securities/{symbol}.json?iss.only=marketdata,securities",
         f"{ISS_BASE}/engines/stock/markets/shares/securities/{symbol}.json?iss.only=marketdata,securities",
